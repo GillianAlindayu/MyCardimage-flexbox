@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering the card in the viewport */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Header */
+.card-header {
+    background-color: #4276ba;
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+    border-bottom: 3px solid #ff5722;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Card Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Image Section */
+.card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card-image img {
+    border-radius: 50%;
+    border: 5px solid #0f1744;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Image hover effect */
+.card-image img:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text under image */
+.card-image h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Optional media query for responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card-image img {
+        height: 150px;
+        width: 150px;
+    }
+}
